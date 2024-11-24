@@ -41,7 +41,7 @@ app.use(costomer);
 const regP = require('./Codes/RegProducts');
 app.use(regP);
 database.sequelize.sync().then(() => {
-    app.listen(PORT,() => {
+    app.listen(PORT,"192.168.67.253", () => {
         console.log(`our app is running on port ${PORT}`);
     })
 })
